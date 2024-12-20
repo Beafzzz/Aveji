@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "Helvetica";
+    src: local("Helvetica Regular"),
+    local("Helvetica-Regular"),
+    url("assets/font/helvetica_regular.otf") format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.font-roboto{
+    font-family: 'Roboto', serif;
+}
+
+.font-helvetica{
+    font-family: 'Helvetica';
+}
+
+body{
+    padding: 12px 32px;
+}
+
+header{
+    display: flex;
+}
+
+.hello-screen{
+    margin-top: 40px;
+}
+
+.hello-screen > :first-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 40px;
+}
+
+.hello-screen > .middle{
+    display: flex;
+    gap: 253px;
+}
+
+.about-info-1{
+    display: flex;
+    gap: 135px;
+}
