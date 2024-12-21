@@ -12,6 +12,15 @@
     padding: 0;
 }
 
+.icon-site{
+    height: 50px;
+    width: 47px;
+}
+
+.dropdown-button{
+    display: none;
+}
+
 .font-roboto{
     font-family: 'Roboto', serif;
 }
@@ -26,10 +35,25 @@ body{
 
 header{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .hello-screen{
     margin-top: 40px;
+    height: fit-content;
+}
+
+.hello-text{
+    font-size: 72px; 
+    width: 792px;
+    line-height: 140%;
+}
+
+.hello-text-2{
+    font-size: 20px; 
+    width: 445px;
+    line-height: 140%;
 }
 
 .hello-screen > :first-child{
@@ -41,10 +65,206 @@ header{
 
 .hello-screen > .middle{
     display: flex;
+    justify-content: space-between;
     gap: 253px;
 }
 
 .about-info-1{
     display: flex;
+    justify-content: space-evenly;
+}
+
+.about-info-1-head-text{
+    max-width: 562px; 
+    font-size: 48px;
+}
+
+.about-info-1-head-text-mobile{
+    display: none;
+}
+
+.about-info-1-item-text{
+    font-size: 16px; 
+    max-width: 446px;
+}
+
+.about-info-2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 138px;
     gap: 135px;
+}
+
+.about-info-2 > div div{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px rgba(0, 0, 0, 1);
+    max-width: 679px;
+    padding-bottom: 24px;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 120px;
+}
+
+.projects .grid-projects{
+    display: grid;
+    width: fit-content;
+    gap: 20px 20px;
+    grid-template-columns: 445px 446px 445px;
+    grid-template-rows: repeat(2, 580px);
+}
+
+.reviews{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 120px;
+}
+
+.reviews > .grid-reviews{
+    display: grid;
+    width: fit-content;
+    gap: 0px 20px;
+    grid-template-columns: repeat(3, 445px);
+    grid-template-rows: 327px;
+}
+
+.grid-reviews-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: solid 1px black;
+}
+
+.grid-reviews-item > img{
+    margin-bottom: 12px;
+}
+
+
+footer{
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer > .copyright-license{
+    display: flex;
+    flex-direction: column;
+}   
+
+footer > .socials{
+    display: flex;
+    gap: 40px;
+}
+
+
+.form-action{
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+}
+
+.form-action > .right-side{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-action > .right-side > .inputs > input{
+    border: none;
+    padding-bottom: 12.5px;
+    border-bottom: solid 1px #212529;
+}
+
+.form-action > .right-side > .inputs > input::placeholder{
+    font-family: 'Roboto', serif;
+    font-size: 16px;
+    color: #212529;
+}
+
+.form-action > .right-side > button{
+    padding: 12px 20px;
+    max-width: fit-content;
+    border: none;
+    color: white;
+    background-color: #212529;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+
+@media (min-width: 310px) and (max-width: 400px){
+    header div{
+        display: none;
+    }
+
+    .icon-site{
+        height: 28px;
+        width: 26px;
+    }
+
+    .dropdown-button{
+        display: block;
+        width: 30px;
+        height: 18px;
+    }
+
+    .hello-screen > :first-child{
+        flex-direction: column;
+    }
+
+    .hello-text{
+        font-size: 32px;
+        max-width: 100%;
+    }
+
+    .hello-text-2{
+        font-size: 16px;
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .hello-screen > .middle{
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .big-sofa{
+        width: 100%;
+        height: 261px;
+    }
+
+    .michael-sofa{
+        display: none;
+    }
+
+    .about-info-1{
+        flex-direction: column;
+    }
+    
+    .about-info-1-head-text{
+        display: none;
+    }
+
+    .about-info-1-head-text-mobile{
+        display: block;
+        font-size: 28px ;
+    }
+
+    .about-info-1-item-text{
+        width: 328px;
+    }
+
+    .about-info-2{
+        flex-direction: column;
+    }
 }
