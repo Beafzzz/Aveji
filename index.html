@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body style="display: flex; flex-direction: column; overflow-x: hidden;">
     <header>
         <img src="assets/img/icon.png" class="icon-site">
         <img src="assets/img/burger.png" class="dropdown-button">
@@ -39,7 +39,7 @@
     <div class="about-info-1">
         <p class="font-helvetica about-info-1-head-text">Более 5 лет создаем мебель для вашего комфорта</p>
         <p class="font-helvetica about-info-1-head-text-mobile">О компании</p>
-        <div style="display: flex; gap: 44px; flex-direction: column; padding-right: 233px;">
+        <div class="about-info-1-info-block">
             <div style="display: flex; gap: 16px; flex-direction: column; margin-top: 20px;">
                 <p class="font-roboto about-info-1-item-text">Мы — команда профессионалов, которые могут произвести любую мебель для вашего проекта, а также найти производственное решение любой задумки. </p>
                 <p class="font-roboto about-info-1-item-text">Наша основная цель — реализовывать самые смелые задумки, и делать это качественно и аккуратно.</p>
@@ -47,50 +47,54 @@
             </div>
             <div style="display: flex; gap: 24px; flex-direction: column;">
                 <div>
-                    <p class="font-helvetica" style="font-size: 36px;">1 год</p>
-                    <p class="font-roboto">гарантии на всю продукцию</p>
+                    <p class="font-helvetica about-info-1-mini-info-head-text">1 год</p>
+                    <p class="font-roboto about-info-1-mini-info-body-text">гарантии на всю продукцию</p>
                 </div>
                 <div>
-                    <p class="font-helvetica" style="font-size: 36px;">300+</p>
-                    <p class="font-roboto">выполненных проектов</p>
+                    <p class="font-helvetica about-info-1-mini-info-head-text">300+</p>
+                    <p class="font-roboto about-info-1-mini-info-body-text">выполненных проектов</p>
                 </div>
                 <div>
-                    <p class="font-helvetica" style="font-size: 36px;">15 дней</p>
-                    <p class="font-roboto">срок производства</p>
+                    <p class="font-helvetica about-info-1-mini-info-head-text">15 дней</p>
+                    <p class="font-roboto about-info-1-mini-info-body-text">срок производства</p>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="about-info-2">
-        <p class="font-helvetica" style="font-size: 48px;">Как мы работаем</p>
+        <p class="font-helvetica about-info-2-head-text">Как мы работаем</p>
         <div style="display: flex; flex-direction: column; gap: 24px;">
             <p class="font-roboto" style="margin-bottom: 20px; font-size: 16px;">Алгоритм работы с нами для удобства и понимания проекта</p>
-            <div>
-                <p class="font-helvetica" style="max-width: 339px; font-size: 36px;">Идея</p>
-                <p class="font-roboto" style="max-width: 329px;">Клиент приходит к нам с идеей. Это может быть изображение/ эскиз или другой референс. А мы думаем над тем, как это реализовать, делаем технические чертежи и предлагаем решения по материалам.</p>
+            <div class="about-info-2-item">
+                <p class="font-helvetica about-info-2-item-head-text">Идея</p>
+                <p class="font-roboto about-info-2-item-body-text">Клиент приходит к нам с идеей. Это может быть изображение/ эскиз или другой референс. А мы думаем над тем, как это реализовать, делаем технические чертежи и предлагаем решения по материалам.</p>
             </div>
-            <div>
-                <p class="font-helvetica" style="max-width: 339px; font-size: 36px;">Техническое задание</p>
-                <p class="font-roboto" style="max-width: 329px;">Вместе с клиентом формулируем корректное ТЗ, которое включает в себя визуализацию изделия, эскизный чертёж с габаритами, информацию по материалам и отделке, срок реализации проекта и другие обязательные пункты.</p>
+            <div class="about-info-2-item">
+                <p class="font-helvetica about-info-2-item-head-text">Техническое задание</p>
+                <p class="font-roboto about-info-2-item-body-text">Вместе с клиентом формулируем корректное ТЗ, которое включает в себя визуализацию изделия, эскизный чертёж с габаритами, информацию по материалам и отделке, срок реализации проекта и другие обязательные пункты.</p>
             </div>
-            <div>
-                <p class="font-helvetica" style="max-width: 339px; font-size: 36px;">Коммерческое предложение</p>
-                <p class="font-roboto" style="max-width: 329px;">Предпочтительно используем натуральные материалы. Но любую смету можем оптимизировать, упростив материалы или конструктив. Сможем подстроиться под бюджет клиента и согласуем коммерческое предложение</p>
+            <div class="about-info-2-item">
+                <p class="font-helvetica about-info-2-item-head-text">Коммерческое предложение</p>
+                <p class="font-roboto about-info-2-item-body-text">Предпочтительно используем натуральные материалы. Но любую смету можем оптимизировать, упростив материалы или конструктив. Сможем подстроиться под бюджет клиента и согласуем коммерческое предложение</p>
             </div>
-            <div>
-                <p class="font-helvetica" style="max-width: 339px; font-size: 36px;">Подготовка рабочего проекта</p>
-                <p class="font-roboto" style="max-width: 329px;">Создадим рабочую документацию и чертежи. Это фундамент качественного производства. На этом этапе утверждаем с клиентом все габариты и материалы, чертежи и приступаем к производству.</p>
+            <div class="about-info-2-item">
+                <p class="font-helvetica about-info-2-item-head-text">Подготовка рабочего проекта</p>
+                <p class="font-roboto about-info-2-item-body-text">Создадим рабочую документацию и чертежи. Это фундамент качественного производства. На этом этапе утверждаем с клиентом все габариты и материалы, чертежи и приступаем к производству.</p>
             </div>
-            <div>
-                <p class="font-helvetica" style="max-width: 339px; font-size: 36px;">Производство и монтаж</p>
-                <p class="font-roboto" style="max-width: 329px;">Производство занимает от 15 рабочих дней, в зависимости от сложности и объёма. Монтажом тоже занимаемся самостоятельно. Ведь мы это сделаем быстро и аккуратно.</p>
+            <div class="about-info-2-item">
+                <p class="font-helvetica about-info-2-item-head-text">Производство и монтаж</p>
+                <p class="font-roboto about-info-2-item-body-text">Производство занимает от 15 рабочих дней, в зависимости от сложности и объёма. Монтажом тоже занимаемся самостоятельно. Ведь мы это сделаем быстро и аккуратно.</p>
             </div>
         </div>
     </div>
 
     <div class="projects">
-        <p class="font-helvetica" style=" display: flex; width: 77%; font-size: 48px; color: #212529;">Проекты</p>
+        <p class="font-helvetica projects-head-text">Проекты</p>
+        <div class="flex-projects">
+            <img src="assets/img/grid-item-1.png" width="252px" height="328px">
+            <img src="assets/img/grid-item-2-mobile.png">
+        </div>
         <div class="grid-projects">
             <img src="assets/img/grid-item-1.png">
             <img src="assets/img/grid-item-2.png">
@@ -102,22 +106,22 @@
     </div>
 
     <div class="reviews">
-        <p class="font-helvetica" style="display: flex; width: 77%; font-size: 48px; color: #212529;">Отзывы</p>
+        <p class="font-helvetica reviews-head-text">Отзывы</p>
         <div class="grid-reviews">
             <div class="grid-reviews-item">
                 <img src="assets/img/mark.png">
                 <p class="font-helvetica" style="font-size: 18px; text-align: center;">Игорь Антонов</p>
-                <p class="font-roboto" style="font-size: 16px; max-width: 365px; text-align: center; line-height: 140%;">Обратилась к Aveji по рекомендации. Команда сразу поняла, какой дизайн я хочу. Предоставили несколько вариантов и в течение недели сделали наброски. Итог понравился, все на высшем уровне.</p>
+                <p class="font-roboto grid-reviews-item-body-text" >Обратилась к Aveji по рекомендации. Команда сразу поняла, какой дизайн я хочу. Предоставили несколько вариантов и в течение недели сделали наброски. Итог понравился, все на высшем уровне.</p>
             </div>
             <div class="grid-reviews-item">
                 <img src="assets/img/mark.png">
                 <p class="font-helvetica" style="font-size: 18px; text-align: center;">Ольга <br>Иванова</p>
-                <p class="font-roboto" style="font-size: 16px; max-width: 365px; text-align: center; line-height: 140%;">После пары заказов у компании Aveji убедилась, что за мебелью теперь только к ним. Абсолютно любые решения, в любых размерах и форм-факторе, то что нужно!</p>
+                <p class="font-roboto grid-reviews-item-body-text" >После пары заказов у компании Aveji убедилась, что за мебелью теперь только к ним. Абсолютно любые решения, в любых размерах и форм-факторе, то что нужно!</p>
             </div>
             <div class="grid-reviews-item">
                 <img src="assets/img/mark.png">
                 <p class="font-helvetica" style="font-size: 18px; text-align: center;">Аркадий Макаров</p>
-                <p class="font-roboto" style="font-size: 16px; max-width: 365px; text-align: center; line-height: 140%;">Aveji — настоящие профессионалы своего дела. Быстро поняли мою задумку, сделали дизайн, согласовали и изготовили мебель. А потом еще и бесплатно все собрали на месте. Большое спасибо!</p>
+                <p class="font-roboto grid-reviews-item-body-text">Aveji — настоящие профессионалы своего дела. Быстро поняли мою задумку, сделали дизайн, согласовали и изготовили мебель. А потом еще и бесплатно все собрали на месте. Большое спасибо!</p>
             </div>
         </div>
     </div>
@@ -125,15 +129,15 @@
     <div class="form-action">
         <img src="assets/img/form-img.png">
         <div class="right-side">
-            <p class="font-helvetica" style="font-size: 48px;">Хотите заказать проект?</p>
-            <p class="font-roboto" style="font-size: 16px; margin-top: 35px;">Оставьте заявку, и мы вам перезвоним</p>
-            <div class="inputs" style="display: flex; flex-direction: column; gap: 16px; margin-top: 79px;">
+            <p class="font-helvetica form-head-text">Хотите заказать проект?</p>
+            <p class="font-roboto form-body-text">Оставьте заявку, и мы вам перезвоним</p>
+            <div class="inputs">
                 <input type="text" placeholder="Имя">
                 <input type="email" placeholder="E-mail">
                 <input type="text" placeholder="Телефон">
             </div>
-            <button class="font-roboto" style="margin-top: 24px;">Отправить заявку</button>
-            <img src="assets/img/apps.png" style="margin-top: 40px; max-width: 250px;">
+            <button class="font-roboto">Отправить заявку</button>
+            <img src="assets/img/apps.png" class="download-icons">
         </div>
     </div>
 
@@ -142,7 +146,11 @@
             <p class="font-roboto" style="font-size: 18px; text-transform: uppercase;">© 2023 Aveji</p>
             <p class="font-roboto" style="font-size: 18px; text-transform: uppercase;">Все права защищены</p>
         </div>
-        <p class="font-roboto">Политика конфеденциальности / Оплата и доставка</p>
+        <div class="policy-billing">
+            <p class="font-roboto policy">Политика конфеденциальности</p>
+            <p class="font-roboto slash">/</p>
+            <p class="font-roboto billing"> Оплата и доставка</p>
+        </div>
         <div class="socials" style="font-size: 16px;">
             <p class="font-roboto" style="font-size: 18px; text-transform: uppercase;">Вконтакте</p>
             <p class="font-roboto" style="font-size: 18px; text-transform: uppercase;">Телеграм</p>
