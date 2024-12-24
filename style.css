@@ -39,6 +39,10 @@ header{
     align-items: center;
 }
 
+.header-text{
+    font-size: 18px;
+}
+
 .hello-screen{
     margin-top: 40px;
     height: fit-content;
@@ -71,7 +75,9 @@ header{
 
 .about-info-1{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 312px;
+    padding-right: 150px;
 }
 
 .about-info-1-head-text{
@@ -87,8 +93,8 @@ header{
     display: flex; 
     gap: 44px; 
     flex-direction: column; 
-    padding-right: 233px; 
-    width: 100%;
+    width: fit-content;
+    padding-right: 80px;
 }
 
 .about-info-1-mini-info-head-text{
@@ -283,6 +289,10 @@ footer > .socials{
 
     header div{
         display: none;
+    }
+
+    .header-text{
+        font-size: 16px;
     }
 
     .icon-site{
